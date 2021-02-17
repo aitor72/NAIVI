@@ -641,13 +641,44 @@
     <Rooms>
       <UnloadedRoomFolder Name="Main">
         <SubFolders />
-        <UnloadedRooms />
+        <UnloadedRooms>
+          <UnloadedRoom>
+            <Number>1</Number>
+            <Description>PasilloNave</Description>
+          </UnloadedRoom>
+          <UnloadedRoom>
+            <Number>2</Number>
+            <Description IsNull="True" />
+          </UnloadedRoom>
+        </UnloadedRooms>
       </UnloadedRoomFolder>
     </Rooms>
     <GUIs>
       <GUIFolder Name="Main">
         <SubFolders />
-        <GUIs />
+        <GUIs>
+          <GUIMain>
+            <NormalGUI>
+              <OnClick />
+              <Height>480</Height>
+              <Width>640</Width>
+              <Left>0</Left>
+              <Top>0</Top>
+              <Clickable>True</Clickable>
+              <Visible>True</Visible>
+              <PopupStyle>Persistent</PopupStyle>
+              <PopupYPos>0</PopupYPos>
+              <ZOrder>0</ZOrder>
+              <BorderColor>65535</BorderColor>
+              <Transparency>50</Transparency>
+              <BackgroundColor>65535</BackgroundColor>
+              <BackgroundImage>2</BackgroundImage>
+              <ID>0</ID>
+              <Name>gGuiTime</Name>
+            </NormalGUI>
+            <Controls />
+          </GUIMain>
+        </GUIs>
       </GUIFolder>
     </GUIs>
     <InventoryItems>
@@ -833,9 +864,9 @@
             <IdleView>0</IdleView>
             <ThinkingView>0</ThinkingView>
             <BlinkingView>0</BlinkingView>
-            <StartingRoom>-1</StartingRoom>
-            <StartX>160</StartX>
-            <StartY>160</StartY>
+            <StartingRoom>2</StartingRoom>
+            <StartX>600</StartX>
+            <StartY>600</StartY>
             <UniformMovementSpeed>True</UniformMovementSpeed>
             <MovementSpeed>3</MovementSpeed>
             <MovementSpeedX>3</MovementSpeedX>
@@ -1290,11 +1321,73 @@
       <PaletteEntry Index="255" Type="Background" Red="120" Green="120" Blue="120" />
     </Palette>
     <GlobalVariables>
-      <Variables />
+      <Variables>
+        <GlobalVariable>
+          <Name>time</Name>
+          <Type>int</Type>
+          <DefaultValue>0</DefaultValue>
+        </GlobalVariable>
+      </Variables>
     </GlobalVariables>
     <Sprites>
       <SpriteFolder Name="Main">
-        <SubFolders />
+        <SubFolders>
+          <SpriteFolder Name="Characters">
+            <SubFolders />
+            <Sprites>
+              <Sprite Slot="1" Width="180" Height="495" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>Z:\Users\Joel\Desktop\Uni\2020\2n Trimestre\Narrativa i Videojocs\Practica\NAIVI\Fotos\Captura (1).png</FileName>
+                  <OffsetX>0</OffsetX>
+                  <OffsetY>0</OffsetY>
+                  <ImportHeight>495</ImportHeight>
+                  <ImportWidth>180</ImportWidth>
+                  <ImportAsTile>False</ImportAsTile>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>False</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+            </Sprites>
+          </SpriteFolder>
+          <SpriteFolder Name="clock">
+            <SubFolders />
+            <Sprites>
+              <Sprite Slot="2" Width="206" Height="314" ColorDepth="32" Resolution="Real" AlphaChannel="False">
+                <Source>
+                  <FileName>Z:\Users\Joel\Desktop\Uni\2020\2n Trimestre\Narrativa i Videojocs\Practica\NAIVI\Fotos\black-digital-numbers-0-9-numbers-vector-20413785.jpg</FileName>
+                  <OffsetX>104</OffsetX>
+                  <OffsetY>8</OffsetY>
+                  <ImportHeight>314</ImportHeight>
+                  <ImportWidth>206</ImportWidth>
+                  <ImportAsTile>True</ImportAsTile>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>False</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+              <Sprite Slot="3" Width="160" Height="318" ColorDepth="32" Resolution="Real" AlphaChannel="False">
+                <Source>
+                  <FileName>Z:\Users\Joel\Desktop\Uni\2020\2n Trimestre\Narrativa i Videojocs\Practica\NAIVI\Fotos\black-digital-numbers-0-9-numbers-vector-20413785.jpg</FileName>
+                  <OffsetX>328</OffsetX>
+                  <OffsetY>5</OffsetY>
+                  <ImportHeight>318</ImportHeight>
+                  <ImportWidth>160</ImportWidth>
+                  <ImportAsTile>True</ImportAsTile>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>False</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+            </Sprites>
+          </SpriteFolder>
+        </SubFolders>
         <Sprites>
           <Sprite Slot="0" Width="1" Height="1" ColorDepth="8" Resolution="Real" AlphaChannel="False">
             <Source>
@@ -1328,7 +1421,7 @@
                 <Frames>
                   <ViewFrame>
                     <ID>0</ID>
-                    <Image>0</Image>
+                    <Image>1</Image>
                     <Flipped>False</Flipped>
                     <Delay>0</Delay>
                     <Sound>0</Sound>
@@ -1341,7 +1434,7 @@
                 <Frames>
                   <ViewFrame>
                     <ID>0</ID>
-                    <Image>0</Image>
+                    <Image>1</Image>
                     <Flipped>False</Flipped>
                     <Delay>0</Delay>
                     <Sound>0</Sound>
@@ -1354,7 +1447,7 @@
                 <Frames>
                   <ViewFrame>
                     <ID>0</ID>
-                    <Image>0</Image>
+                    <Image>1</Image>
                     <Flipped>False</Flipped>
                     <Delay>0</Delay>
                     <Sound>0</Sound>
@@ -1367,7 +1460,7 @@
                 <Frames>
                   <ViewFrame>
                     <ID>0</ID>
-                    <Image>0</Image>
+                    <Image>1</Image>
                     <Flipped>False</Flipped>
                     <Delay>0</Delay>
                     <Sound>0</Sound>
