@@ -8,7 +8,7 @@
       <UniqueID>250612781</UniqueID>
       <GUIDAsString>{c45aabcb-d99d-4e21-8993-f762a5a573f1}</GUIDAsString>
       <ColorDepth>TrueColor</ColorDepth>
-      <CustomResolution>1280,800</CustomResolution>
+      <CustomResolution>1600,900</CustomResolution>
       <AllowRelativeAssetResolutions>False</AllowRelativeAssetResolutions>
       <CompressSprites>False</CompressSprites>
       <SaveScreenshots>False</SaveScreenshots>
@@ -648,7 +648,11 @@
           </UnloadedRoom>
           <UnloadedRoom>
             <Number>2</Number>
-            <Description IsNull="True" />
+            <Description xml:space="preserve">Sala de mando?</Description>
+          </UnloadedRoom>
+          <UnloadedRoom>
+            <Number>3</Number>
+            <Description>Bar</Description>
           </UnloadedRoom>
         </UnloadedRooms>
       </UnloadedRoomFolder>
@@ -660,8 +664,8 @@
           <GUIMain>
             <NormalGUI>
               <OnClick />
-              <Height>480</Height>
-              <Width>640</Width>
+              <Height>315</Height>
+              <Width>210</Width>
               <Left>0</Left>
               <Top>0</Top>
               <Clickable>True</Clickable>
@@ -672,7 +676,7 @@
               <BorderColor>65535</BorderColor>
               <Transparency>50</Transparency>
               <BackgroundColor>65535</BackgroundColor>
-              <BackgroundImage>2</BackgroundImage>
+              <BackgroundImage>3</BackgroundImage>
               <ID>0</ID>
               <Name>gGuiTime</Name>
             </NormalGUI>
@@ -864,11 +868,11 @@
             <IdleView>0</IdleView>
             <ThinkingView>0</ThinkingView>
             <BlinkingView>0</BlinkingView>
-            <StartingRoom>2</StartingRoom>
-            <StartX>600</StartX>
-            <StartY>600</StartY>
+            <StartingRoom>1</StartingRoom>
+            <StartX>800</StartX>
+            <StartY>800</StartY>
             <UniformMovementSpeed>True</UniformMovementSpeed>
-            <MovementSpeed>3</MovementSpeed>
+            <MovementSpeed>10</MovementSpeed>
             <MovementSpeedX>3</MovementSpeedX>
             <MovementSpeedY>0</MovementSpeedY>
             <AnimationDelay>4</AnimationDelay>
@@ -911,7 +915,7 @@
         <HotspotX>0</HotspotX>
         <HotspotY>0</HotspotY>
         <StandardMode>True</StandardMode>
-        <Image>0</Image>
+        <Image>2</Image>
         <View>0</View>
         <Animate>False</Animate>
         <AnimateOnlyOnHotspots>False</AnimateOnlyOnHotspots>
@@ -923,7 +927,7 @@
         <HotspotX>0</HotspotX>
         <HotspotY>0</HotspotY>
         <StandardMode>True</StandardMode>
-        <Image>0</Image>
+        <Image>7</Image>
         <View>0</View>
         <Animate>False</Animate>
         <AnimateOnlyOnHotspots>False</AnimateOnlyOnHotspots>
@@ -935,7 +939,7 @@
         <HotspotX>0</HotspotX>
         <HotspotY>0</HotspotY>
         <StandardMode>True</StandardMode>
-        <Image>0</Image>
+        <Image>7</Image>
         <View>0</View>
         <Animate>False</Animate>
         <AnimateOnlyOnHotspots>False</AnimateOnlyOnHotspots>
@@ -1355,13 +1359,78 @@
           <SpriteFolder Name="clock">
             <SubFolders />
             <Sprites>
-              <Sprite Slot="2" Width="206" Height="314" ColorDepth="32" Resolution="Real" AlphaChannel="False">
+              <Sprite Slot="3" Width="209" Height="314" ColorDepth="32" Resolution="Real" AlphaChannel="False">
                 <Source>
-                  <FileName>Z:\Users\Joel\Desktop\Uni\2020\2n Trimestre\Narrativa i Videojocs\Practica\NAIVI\Fotos\black-digital-numbers-0-9-numbers-vector-20413785.jpg</FileName>
-                  <OffsetX>104</OffsetX>
-                  <OffsetY>8</OffsetY>
+                  <FileName>Z:\Users\Joel\Desktop\Uni\2020\2n Trimestre\Narrativa i Videojocs\Practica\NAIVI\Fotos\numero01.jpg</FileName>
+                  <OffsetX>1</OffsetX>
+                  <OffsetY>1</OffsetY>
                   <ImportHeight>314</ImportHeight>
-                  <ImportWidth>206</ImportWidth>
+                  <ImportWidth>209</ImportWidth>
+                  <ImportAsTile>True</ImportAsTile>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>False</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>BottomRight</ImportMethod>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+              <Sprite Slot="4" Width="209" Height="314" ColorDepth="32" Resolution="Real" AlphaChannel="False">
+                <Source>
+                  <FileName>Z:\Users\Joel\Desktop\Uni\2020\2n Trimestre\Narrativa i Videojocs\Practica\NAIVI\Fotos\numero02.jpg</FileName>
+                  <OffsetX>1</OffsetX>
+                  <OffsetY>1</OffsetY>
+                  <ImportHeight>314</ImportHeight>
+                  <ImportWidth>209</ImportWidth>
+                  <ImportAsTile>True</ImportAsTile>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>False</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>BottomRight</ImportMethod>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+              <Sprite Slot="5" Width="209" Height="314" ColorDepth="32" Resolution="Real" AlphaChannel="False">
+                <Source>
+                  <FileName>Z:\Users\Joel\Desktop\Uni\2020\2n Trimestre\Narrativa i Videojocs\Practica\NAIVI\Fotos\numero03.jpg</FileName>
+                  <OffsetX>1</OffsetX>
+                  <OffsetY>1</OffsetY>
+                  <ImportHeight>314</ImportHeight>
+                  <ImportWidth>209</ImportWidth>
+                  <ImportAsTile>True</ImportAsTile>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>False</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>BottomRight</ImportMethod>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+              <Sprite Slot="6" Width="210" Height="314" ColorDepth="32" Resolution="Real" AlphaChannel="False">
+                <Source>
+                  <FileName>Z:\Users\Joel\Desktop\Uni\2020\2n Trimestre\Narrativa i Videojocs\Practica\NAIVI\Fotos\numero04.jpg</FileName>
+                  <OffsetX>0</OffsetX>
+                  <OffsetY>0</OffsetY>
+                  <ImportHeight>314</ImportHeight>
+                  <ImportWidth>210</ImportWidth>
+                  <ImportAsTile>False</ImportAsTile>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>False</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>BottomRight</ImportMethod>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+            </Sprites>
+          </SpriteFolder>
+          <SpriteFolder Name="Cursor">
+            <SubFolders />
+            <Sprites>
+              <Sprite Slot="2" Width="98" Height="135" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>Z:\Users\Joel\Desktop\Uni\2020\2n Trimestre\Narrativa i Videojocs\Practica\NAIVI\Fotos\220px-Mouse-cursor-hand-pointer.svg.png</FileName>
+                  <OffsetX>6</OffsetX>
+                  <OffsetY>20</OffsetY>
+                  <ImportHeight>135</ImportHeight>
+                  <ImportWidth>98</ImportWidth>
                   <ImportAsTile>True</ImportAsTile>
                   <Frame>0</Frame>
                   <RemapToGamePalette>False</RemapToGamePalette>
@@ -1370,14 +1439,34 @@
                   <ImportAlphaChannel>True</ImportAlphaChannel>
                 </Source>
               </Sprite>
-              <Sprite Slot="3" Width="160" Height="318" ColorDepth="32" Resolution="Real" AlphaChannel="False">
+              <Sprite Slot="7" Width="119" Height="146" ColorDepth="32" Resolution="Real" AlphaChannel="True">
                 <Source>
-                  <FileName>Z:\Users\Joel\Desktop\Uni\2020\2n Trimestre\Narrativa i Videojocs\Practica\NAIVI\Fotos\black-digital-numbers-0-9-numbers-vector-20413785.jpg</FileName>
-                  <OffsetX>328</OffsetX>
-                  <OffsetY>5</OffsetY>
-                  <ImportHeight>318</ImportHeight>
-                  <ImportWidth>160</ImportWidth>
+                  <FileName>Z:\Users\Joel\Desktop\Uni\2020\2n Trimestre\Narrativa i Videojocs\Practica\NAIVI\Fotos\220px-Mouse-cursor-hand-pointer.svg.png</FileName>
+                  <OffsetX>96</OffsetX>
+                  <OffsetY>11</OffsetY>
+                  <ImportHeight>146</ImportHeight>
+                  <ImportWidth>119</ImportWidth>
                   <ImportAsTile>True</ImportAsTile>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>False</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+            </Sprites>
+          </SpriteFolder>
+          <SpriteFolder Name="Objects">
+            <SubFolders />
+            <Sprites>
+              <Sprite Slot="8" Width="135" Height="135" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>Z:\Users\Joel\Desktop\Uni\2020\2n Trimestre\Narrativa i Videojocs\Practica\NAIVI\Fotos\open-book-clipart-03.png</FileName>
+                  <OffsetX>0</OffsetX>
+                  <OffsetY>0</OffsetY>
+                  <ImportHeight>135</ImportHeight>
+                  <ImportWidth>135</ImportWidth>
+                  <ImportAsTile>False</ImportAsTile>
                   <Frame>0</Frame>
                   <RemapToGamePalette>False</RemapToGamePalette>
                   <RemapToRoomPalette>False</RemapToRoomPalette>
