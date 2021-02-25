@@ -673,9 +673,9 @@
               <PopupStyle>Persistent</PopupStyle>
               <PopupYPos>0</PopupYPos>
               <ZOrder>0</ZOrder>
-              <BorderColor>65535</BorderColor>
-              <Transparency>50</Transparency>
-              <BackgroundColor>65535</BackgroundColor>
+              <BorderColor>0</BorderColor>
+              <Transparency>0</Transparency>
+              <BackgroundColor>0</BackgroundColor>
               <BackgroundImage>3</BackgroundImage>
               <ID>0</ID>
               <Name>gGuiTime</Name>
