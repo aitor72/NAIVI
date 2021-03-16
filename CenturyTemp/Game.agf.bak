@@ -683,12 +683,8 @@
             <Description xml:space="preserve">Sala secreta</Description>
           </UnloadedRoom>
           <UnloadedRoom>
-            <Number>11</Number>
-            <Description xml:space="preserve">Acaba el dia</Description>
-          </UnloadedRoom>
-          <UnloadedRoom>
             <Number>12</Number>
-            <Description IsNull="True" />
+            <Description xml:space="preserve">La otra puerta con pin</Description>
           </UnloadedRoom>
           <UnloadedRoom>
             <Number>13</Number>
@@ -759,7 +755,7 @@
               <Left>0</Left>
               <Top>0</Top>
               <Clickable>True</Clickable>
-              <Visible>True</Visible>
+              <Visible>False</Visible>
               <PopupStyle>Normal</PopupStyle>
               <PopupYPos>0</PopupYPos>
               <ZOrder>0</ZOrder>
@@ -1030,7 +1026,7 @@
                 <Visible>True</Visible>
               </GUIButton>
               <GUIButton>
-                <OnClick>ButtonHastag_OnClick</OnClick>
+                <OnClick>ButtonTick_OnClick</OnClick>
                 <ClickAction>RunScript</ClickAction>
                 <NewModeNumber>0</NewModeNumber>
                 <ClipImage>False</ClipImage>
@@ -1039,7 +1035,7 @@
                 <Font>0</Font>
                 <PushedImage>0</PushedImage>
                 <MouseoverImage>0</MouseoverImage>
-                <Image>47</Image>
+                <Image>61</Image>
                 <Text xml:space="preserve">New Button</Text>
                 <Height>175</Height>
                 <Locked>False</Locked>
@@ -1048,13 +1044,13 @@
                 <Top>583</Top>
                 <ZOrder>11</ZOrder>
                 <ID>11</ID>
-                <Name>ButtonHastag</Name>
+                <Name>ButtonTick</Name>
                 <Clickable>True</Clickable>
                 <Enabled>True</Enabled>
                 <Visible>True</Visible>
               </GUIButton>
               <GUIButton>
-                <OnClick>ButtonAsterisco_OnClick</OnClick>
+                <OnClick>ButtonCruz_OnClick</OnClick>
                 <ClickAction>RunScript</ClickAction>
                 <NewModeNumber>0</NewModeNumber>
                 <ClipImage>False</ClipImage>
@@ -1063,16 +1059,16 @@
                 <Font>0</Font>
                 <PushedImage>0</PushedImage>
                 <MouseoverImage>0</MouseoverImage>
-                <Image>58</Image>
+                <Image>60</Image>
                 <Text xml:space="preserve">New Button</Text>
-                <Height>175</Height>
+                <Height>155</Height>
                 <Locked>False</Locked>
-                <Width>217</Width>
+                <Width>211</Width>
                 <Left>815</Left>
                 <Top>583</Top>
                 <ZOrder>12</ZOrder>
                 <ID>12</ID>
-                <Name>ButtonAsterisco</Name>
+                <Name>ButtonCruz</Name>
                 <Clickable>True</Clickable>
                 <Enabled>True</Enabled>
                 <Visible>True</Visible>
@@ -2408,12 +2404,27 @@ return
                   <ImportAlphaChannel>True</ImportAlphaChannel>
                 </Source>
               </Sprite>
+              <Sprite Slot="58" Width="447" Height="238" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>Z:\Users\Joel\Desktop\Uni\2020\2n Trimestre\Narrativa i Videojocs\Practica\NAIVI\Fotos\cuadro_tutorial.png</FileName>
+                  <OffsetX>0</OffsetX>
+                  <OffsetY>0</OffsetY>
+                  <ImportHeight>238</ImportHeight>
+                  <ImportWidth>447</ImportWidth>
+                  <ImportAsTile>False</ImportAsTile>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>False</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
             </Sprites>
           </SpriteFolder>
           <SpriteFolder Name="Grietas">
             <SubFolders />
             <Sprites>
-              <Sprite Slot="28" Width="1024" Height="882" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+              <Sprite Slot="28" Width="256" Height="221" ColorDepth="32" Resolution="Real" AlphaChannel="True">
                 <Source>
                   <FileName>Z:\Users\Joel\Desktop\Uni\2020\2n Trimestre\Narrativa i Videojocs\Practica\NAIVI\Fotos\Grietas\grieta1.png</FileName>
                   <OffsetX>0</OffsetX>
@@ -2428,7 +2439,7 @@ return
                   <ImportAlphaChannel>True</ImportAlphaChannel>
                 </Source>
               </Sprite>
-              <Sprite Slot="29" Width="1920" Height="834" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+              <Sprite Slot="29" Width="384" Height="167" ColorDepth="32" Resolution="Real" AlphaChannel="True">
                 <Source>
                   <FileName>Z:\Users\Joel\Desktop\Uni\2020\2n Trimestre\Narrativa i Videojocs\Practica\NAIVI\Fotos\Grietas\grieta2.png</FileName>
                   <OffsetX>0</OffsetX>
@@ -2443,7 +2454,7 @@ return
                   <ImportAlphaChannel>True</ImportAlphaChannel>
                 </Source>
               </Sprite>
-              <Sprite Slot="30" Width="600" Height="600" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+              <Sprite Slot="30" Width="300" Height="90" ColorDepth="32" Resolution="Real" AlphaChannel="True">
                 <Source>
                   <FileName>Z:\Users\Joel\Desktop\Uni\2020\2n Trimestre\Narrativa i Videojocs\Practica\NAIVI\Fotos\Grietas\grieta3.jpg</FileName>
                   <OffsetX>0</OffsetX>
@@ -2503,7 +2514,7 @@ return
                   <ImportAlphaChannel>True</ImportAlphaChannel>
                 </Source>
               </Sprite>
-              <Sprite Slot="34" Width="1024" Height="493" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+              <Sprite Slot="34" Width="256" Height="124" ColorDepth="32" Resolution="Real" AlphaChannel="True">
                 <Source>
                   <FileName>Z:\Users\Joel\Desktop\Uni\2020\2n Trimestre\Narrativa i Videojocs\Practica\NAIVI\Fotos\Grietas\grieta7.png</FileName>
                   <OffsetX>0</OffsetX>
@@ -2533,7 +2544,7 @@ return
                   <ImportAlphaChannel>True</ImportAlphaChannel>
                 </Source>
               </Sprite>
-              <Sprite Slot="36" Width="1024" Height="345" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+              <Sprite Slot="36" Width="512" Height="173" ColorDepth="32" Resolution="Real" AlphaChannel="True">
                 <Source>
                   <FileName>Z:\Users\Joel\Desktop\Uni\2020\2n Trimestre\Narrativa i Videojocs\Practica\NAIVI\Fotos\Grietas\grieta9.png</FileName>
                   <OffsetX>0</OffsetX>
@@ -2548,7 +2559,7 @@ return
                   <ImportAlphaChannel>True</ImportAlphaChannel>
                 </Source>
               </Sprite>
-              <Sprite Slot="37" Width="1024" Height="951" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+              <Sprite Slot="37" Width="256" Height="238" ColorDepth="32" Resolution="Real" AlphaChannel="True">
                 <Source>
                   <FileName>Z:\Users\Joel\Desktop\Uni\2020\2n Trimestre\Narrativa i Videojocs\Practica\NAIVI\Fotos\Grietas\grieta10.png</FileName>
                   <OffsetX>0</OffsetX>
@@ -2563,7 +2574,7 @@ return
                   <ImportAlphaChannel>True</ImportAlphaChannel>
                 </Source>
               </Sprite>
-              <Sprite Slot="38" Width="2000" Height="1730" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+              <Sprite Slot="38" Width="500" Height="433" ColorDepth="32" Resolution="Real" AlphaChannel="True">
                 <Source>
                   <FileName>Z:\Users\Joel\Desktop\Uni\2020\2n Trimestre\Narrativa i Videojocs\Practica\NAIVI\Fotos\Grietas\grieta11.png</FileName>
                   <OffsetX>0</OffsetX>
@@ -2578,7 +2589,7 @@ return
                   <ImportAlphaChannel>True</ImportAlphaChannel>
                 </Source>
               </Sprite>
-              <Sprite Slot="39" Width="1154" Height="2000" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+              <Sprite Slot="39" Width="289" Height="500" ColorDepth="32" Resolution="Real" AlphaChannel="True">
                 <Source>
                   <FileName>Z:\Users\Joel\Desktop\Uni\2020\2n Trimestre\Narrativa i Videojocs\Practica\NAIVI\Fotos\Grietas\grieta12.png</FileName>
                   <OffsetX>0</OffsetX>
@@ -2593,18 +2604,13 @@ return
                   <ImportAlphaChannel>True</ImportAlphaChannel>
                 </Source>
               </Sprite>
-            </Sprites>
-          </SpriteFolder>
-          <SpriteFolder Name="Panel">
-            <SubFolders />
-            <Sprites>
-              <Sprite Slot="47" Width="217" Height="175" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+              <Sprite Slot="47" Width="1600" Height="900" ColorDepth="32" Resolution="Real" AlphaChannel="True">
                 <Source>
-                  <FileName>Z:\Users\Joel\Desktop\Uni\2020\2n Trimestre\Narrativa i Videojocs\Practica\NAIVI\Fotos\Panel\#.png</FileName>
+                  <FileName>Z:\Users\Joel\Desktop\Uni\2020\2n Trimestre\Narrativa i Videojocs\Practica\NAIVI\Fotos\Grietas\overlay_destruido_1.png</FileName>
                   <OffsetX>0</OffsetX>
                   <OffsetY>0</OffsetY>
-                  <ImportHeight>206</ImportHeight>
-                  <ImportWidth>255</ImportWidth>
+                  <ImportHeight>900</ImportHeight>
+                  <ImportWidth>1600</ImportWidth>
                   <ImportAsTile>False</ImportAsTile>
                   <Frame>0</Frame>
                   <RemapToGamePalette>False</RemapToGamePalette>
@@ -2613,6 +2619,11 @@ return
                   <ImportAlphaChannel>True</ImportAlphaChannel>
                 </Source>
               </Sprite>
+            </Sprites>
+          </SpriteFolder>
+          <SpriteFolder Name="Panel">
+            <SubFolders />
+            <Sprites>
               <Sprite Slot="48" Width="217" Height="175" ColorDepth="32" Resolution="Real" AlphaChannel="True">
                 <Source>
                   <FileName>Z:\Users\Joel\Desktop\Uni\2020\2n Trimestre\Narrativa i Videojocs\Practica\NAIVI\Fotos\Panel\0.png</FileName>
@@ -2763,9 +2774,24 @@ return
                   <ImportAlphaChannel>True</ImportAlphaChannel>
                 </Source>
               </Sprite>
-              <Sprite Slot="58" Width="217" Height="175" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+              <Sprite Slot="59" Width="1600" Height="900" ColorDepth="32" Resolution="Real" AlphaChannel="True">
                 <Source>
-                  <FileName>Z:\Users\Joel\Desktop\Uni\2020\2n Trimestre\Narrativa i Videojocs\Practica\NAIVI\Fotos\Panel\asterisco.png</FileName>
+                  <FileName>Z:\Users\Joel\Desktop\Uni\2020\2n Trimestre\Narrativa i Videojocs\Practica\NAIVI\Fotos\Panel\panel_vacio.png</FileName>
+                  <OffsetX>0</OffsetX>
+                  <OffsetY>0</OffsetY>
+                  <ImportHeight>1080</ImportHeight>
+                  <ImportWidth>1920</ImportWidth>
+                  <ImportAsTile>False</ImportAsTile>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>False</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+              <Sprite Slot="60" Width="217" Height="175" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>Z:\Users\Joel\Desktop\Uni\2020\2n Trimestre\Narrativa i Videojocs\Practica\NAIVI\Fotos\Panel\cruz.png</FileName>
                   <OffsetX>0</OffsetX>
                   <OffsetY>0</OffsetY>
                   <ImportHeight>206</ImportHeight>
@@ -2778,13 +2804,13 @@ return
                   <ImportAlphaChannel>True</ImportAlphaChannel>
                 </Source>
               </Sprite>
-              <Sprite Slot="59" Width="1600" Height="900" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+              <Sprite Slot="61" Width="217" Height="175" ColorDepth="32" Resolution="Real" AlphaChannel="True">
                 <Source>
-                  <FileName>Z:\Users\Joel\Desktop\Uni\2020\2n Trimestre\Narrativa i Videojocs\Practica\NAIVI\Fotos\Panel\panel_vacio.png</FileName>
+                  <FileName>Z:\Users\Joel\Desktop\Uni\2020\2n Trimestre\Narrativa i Videojocs\Practica\NAIVI\Fotos\Panel\tick.png</FileName>
                   <OffsetX>0</OffsetX>
                   <OffsetY>0</OffsetY>
-                  <ImportHeight>1080</ImportHeight>
-                  <ImportWidth>1920</ImportWidth>
+                  <ImportHeight>206</ImportHeight>
+                  <ImportWidth>255</ImportWidth>
                   <ImportAsTile>False</ImportAsTile>
                   <Frame>0</Frame>
                   <RemapToGamePalette>False</RemapToGamePalette>
