@@ -702,6 +702,14 @@
             <Number>16</Number>
             <Description xml:space="preserve">Acto 3</Description>
           </UnloadedRoom>
+          <UnloadedRoom>
+            <Number>11</Number>
+            <Description>Fin</Description>
+          </UnloadedRoom>
+          <UnloadedRoom>
+            <Number>17</Number>
+            <Description IsNull="True" />
+          </UnloadedRoom>
         </UnloadedRooms>
       </UnloadedRoomFolder>
     </Rooms>
@@ -1856,6 +1864,16 @@ return
           <Type>int</Type>
           <DefaultValue>0000</DefaultValue>
         </GlobalVariable>
+        <GlobalVariable>
+          <Name>puerta_abierta</Name>
+          <Type>bool</Type>
+          <DefaultValue>false</DefaultValue>
+        </GlobalVariable>
+        <GlobalVariable>
+          <Name>PIN_desbloqueado</Name>
+          <Type>bool</Type>
+          <DefaultValue>false</DefaultValue>
+        </GlobalVariable>
       </Variables>
     </GlobalVariables>
     <Sprites>
@@ -2006,6 +2024,21 @@ return
                   <OffsetY>0</OffsetY>
                   <ImportHeight>407</ImportHeight>
                   <ImportWidth>194</ImportWidth>
+                  <ImportAsTile>False</ImportAsTile>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>False</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+              <Sprite Slot="65" Width="553" Height="130" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>Z:\Users\Joel\Desktop\Uni\2020\2n Trimestre\Narrativa i Videojocs\Practica\NAIVI\Fotos\Personaje\Recurso 10@2x.png</FileName>
+                  <OffsetX>0</OffsetX>
+                  <OffsetY>0</OffsetY>
+                  <ImportHeight>130</ImportHeight>
+                  <ImportWidth>553</ImportWidth>
                   <ImportAsTile>False</ImportAsTile>
                   <Frame>0</Frame>
                   <RemapToGamePalette>False</RemapToGamePalette>
@@ -2411,6 +2444,51 @@ return
                   <OffsetY>0</OffsetY>
                   <ImportHeight>238</ImportHeight>
                   <ImportWidth>447</ImportWidth>
+                  <ImportAsTile>False</ImportAsTile>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>False</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+              <Sprite Slot="62" Width="82" Height="101" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>Z:\Users\Joel\Desktop\Uni\2020\2n Trimestre\Narrativa i Videojocs\Practica\NAIVI\Fotos\PIN2.png</FileName>
+                  <OffsetX>0</OffsetX>
+                  <OffsetY>0</OffsetY>
+                  <ImportHeight>101</ImportHeight>
+                  <ImportWidth>82</ImportWidth>
+                  <ImportAsTile>False</ImportAsTile>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>False</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+              <Sprite Slot="63" Width="662" Height="286" ColorDepth="32" Resolution="Real" AlphaChannel="False">
+                <Source>
+                  <FileName>Z:\Users\Joel\Desktop\Uni\2020\2n Trimestre\Narrativa i Videojocs\Practica\NAIVI\Fotos\camilla.jpg</FileName>
+                  <OffsetX>0</OffsetX>
+                  <OffsetY>0</OffsetY>
+                  <ImportHeight>286</ImportHeight>
+                  <ImportWidth>662</ImportWidth>
+                  <ImportAsTile>False</ImportAsTile>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>False</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+              <Sprite Slot="64" Width="662" Height="286" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>Z:\Users\Joel\Desktop\Uni\2020\2n Trimestre\Narrativa i Videojocs\Practica\NAIVI\Fotos\camilla.png</FileName>
+                  <OffsetX>0</OffsetX>
+                  <OffsetY>0</OffsetY>
+                  <ImportHeight>286</ImportHeight>
+                  <ImportWidth>662</ImportWidth>
                   <ImportAsTile>False</ImportAsTile>
                   <Frame>0</Frame>
                   <RemapToGamePalette>False</RemapToGamePalette>
@@ -3132,6 +3210,25 @@ return
                   <ViewFrame>
                     <ID>0</ID>
                     <Image>42</Image>
+                    <Flipped>False</Flipped>
+                    <Delay>0</Delay>
+                    <Sound>0</Sound>
+                  </ViewFrame>
+                </Frames>
+              </Loop>
+            </Loops>
+          </View>
+          <View>
+            <ID>10</ID>
+            <Name>Tumbado</Name>
+            <Loops>
+              <Loop>
+                <ID>0</ID>
+                <RunNextLoop>False</RunNextLoop>
+                <Frames>
+                  <ViewFrame>
+                    <ID>0</ID>
+                    <Image>65</Image>
                     <Flipped>False</Flipped>
                     <Delay>0</Delay>
                     <Sound>0</Sound>
